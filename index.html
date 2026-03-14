@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Lax</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar" id="progress"></div>
+
+<!-- MUSIC BUTTON -->
+<button class="music-btn" id="musicBtn" title="Toggle Music">♪</button>
+
+<!-- AUDIO: JVKE - Golden Hour (Piano Cover) -->
+<audio id="bgAudio" loop preload="auto"
+  src="song/JVKE%20-%20golden%20hour%20%20Piano%20Cover%20by%20Pianella%20Piano.mp3">
+</audio>
+
+<!-- FIREWORKS CANVAS -->
+<canvas id="fireworks"></canvas>
+
+<!-- ===========================
+     SECTION 1 — OPENING
+=========================== -->
+<section id="s1">
+  <div class="light-leak" style="width:400px;height:400px;background:rgba(201,168,76,0.06);top:10%;left:20%;"></div>
+  <div class="light-leak" style="width:300px;height:300px;background:rgba(201,120,100,0.05);bottom:15%;right:15%;"></div>
+
+  <div style="position:relative;z-index:2;text-align:center;padding:20px;">
+    <p class="s1-date" id="s1date">A story written just for you</p>
+    <h1 class="s1-title" id="s1title">Happy<br>Birthday</h1>
+    <p class="s1-name" id="s1name">My Dearest Friend</p>
+    <p class="s1-sub" id="s1sub">Scroll to relive every beautiful moment ↓</p>
+  </div>
+
+  <div class="scroll-hint" id="scrollHint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===========================
+     SECTION 2 — PHOTO 1
+=========================== -->
+<section class="photo-section" id="s2">
+  <div class="section-num">I</div>
+  <div class="petals-container" id="petals2"></div>
+  <div class="photo-bg" style="background-image: url('lax/Lax.jpeg');"></div>
+
+  <div class="photo-frame-wrap layout-left">
+    <div class="photo-img-box">
+      <div class="frame-border">
+        <!-- Replace src with your photo -->
+        <img src="lax/Lax.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Birthday Photo 1">
+      </div>
+      <div class="corner-gold tl"></div>
+      <div class="corner-gold tr"></div>
+      <div class="corner-gold bl"></div>
+      <div class="corner-gold br"></div>
+    </div>
+    <div class="photo-text">
+      <span class="eyebrow">Chapter One</span>
+      <h2>The one who lights and shines bright</h2>
+      <div class="gold-line"></div>
+      <p>Lab mates...to the level of friendship we have now...I mean it started with hi and the warmth that drew me more to you made me so attached with you. Which completely makes you,You</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     SECTION 3 — PHOTO 2
+=========================== -->
+<section class="photo-section" id="s3">
+  <div class="section-num">II</div>
+  <div class="petals-container" id="petals3"></div>
+  <div class="photo-bg" style="background-image: url('lax/bodtha.jpeg');"></div>
+
+  <div class="photo-frame-wrap layout-right">
+    <div class="photo-img-box">
+      <div class="frame-border">
+        <img src="lax/bodtha.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Birthday Photo 2">
+      </div>
+      <div class="corner-gold tl"></div>
+      <div class="corner-gold tr"></div>
+      <div class="corner-gold bl"></div>
+      <div class="corner-gold br"></div>
+    </div>
+    <div class="photo-text">
+      <span class="eyebrow">Chapter Two</span>
+      <h2>How much you mean to me</h2>
+      <div class="gold-line"></div>
+      <p>It goes on and on...can't end that with a small para how much you mean to me i could even say the least detail you forgot...and that's how much I cherish you 💖</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     SECTION 4 — PHOTO 3
+=========================== -->
+<section class="photo-section" id="s4">
+  <div class="section-num">III</div>
+  <div class="petals-container" id="petals4"></div>
+  <div class="photo-bg" style="background-image: url('lax/heheh.jpeg');"></div>
+
+  <div class="photo-frame-wrap layout-left">
+    <div class="photo-img-box">
+      <div class="frame-border">
+        <img src="lax/heheh.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Birthday Photo 3">
+      </div>
+      <div class="corner-gold tl"></div>
+      <div class="corner-gold tr"></div>
+      <div class="corner-gold bl"></div>
+      <div class="corner-gold br"></div>
+    </div>
+    <div class="photo-text">
+      <span class="eyebrow">Chapter Three</span>
+      <h2>Every memory with you is a treasure</h2>
+      <div class="gold-line"></div>
+      <p>And one thing I wanna say...pls hold your heart that truly appreciate and deserves you will you ? I mean the level of green flags you hold...and are you gonna always lower your standards...Yosii vena ✨</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     SECTION 5 — PHOTO 4
+=========================== -->
+<section class="photo-section" id="s5">
+  <div class="section-num">IV</div>
+  <div class="petals-container" id="petals5"></div>
+  <div class="photo-bg" style="background-image: url('lax/Tranfromer.jpg');"></div>
+
+  <div class="photo-frame-wrap layout-right">
+    <div class="photo-img-box">
+      <div class="frame-border">
+        <img src="lax/Tranfromer.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Birthday Photo 4">
+      </div>
+      <div class="corner-gold tl"></div>
+      <div class="corner-gold tr"></div>
+      <div class="corner-gold bl"></div>
+      <div class="corner-gold br"></div>
+    </div>
+    <div class="photo-text">
+      <span class="eyebrow">Chapter Four</span>
+      <h2>Here's to everything ahead of you</h2>
+      <div class="gold-line"></div>
+      <p>I wish you full fill every dreams you have for your life and you live the life you imagined. The world can think what ever shit they want...but never change</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     SECTION 6 — PHOTO 5
+=========================== -->
+<section class="photo-section" id="s6">
+  <div class="section-num">V</div>
+  <div class="petals-container" id="petals6"></div>
+  <div class="photo-bg" style="background-image: url('lax/IMG-20251010-WA0017.jpg');"></div>
+
+  <div class="photo-frame-wrap layout-center">
+    <div class="photo-img-box">
+      <div class="frame-border">
+        <img src="lax/IMG-20251010-WA0017.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Birthday Photo 5">
+      </div>
+      <div class="corner-gold tl"></div>
+      <div class="corner-gold tr"></div>
+      <div class="corner-gold bl"></div>
+      <div class="corner-gold br"></div>
+    </div>
+    <div class="photo-text" style="text-align:center;">
+      <span class="eyebrow" style="display:block;">Chapter Five</span>
+      <h2>Some are rare but you are pure magic</h2>
+      <div class="gold-line" style="margin:20px auto;"></div>
+      <p>And you, my vro, my friend, my enemy, close one, idiot, kudikari, and lastly Donn too all the names I kept for you....</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     SECTION 7 — GRAND FINALE
+=========================== -->
+<section id="s7">
+  <div class="petals-container" id="petalsFinale"></div>
+  <div class="light-leak" style="width:500px;height:500px;background:rgba(201,168,76,0.08);top:0%;left:25%;"></div>
+  <div class="light-leak" style="width:350px;height:350px;background:rgba(201,100,132,0.07);bottom:10%;right:10%;"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;">
+
+    <div class="finale-photo-ring" id="finaleRing">
+      <div class="finale-ring-outer">
+        <div class="finale-ring-inner">
+          <img src="lax/FINAL.png" class="user-photo" alt="Birthday Person">
+        </div>
+      </div>
+      <div class="orbit-star" style="top:50%;left:50%;">✨</div>
+      <div class="orbit-star" style="top:50%;left:50%;animation-delay:-2s;">🌟</div>
+      <div class="orbit-star" style="top:50%;left:50%;animation-delay:-4s;">⭐</div>
+    </div>
+
+    <p class="finale-tag" id="finale-tag">with all the love in the world</p>
+    <h2 class="finale-hb" id="finale-hb">Happy Birthday</h2>
+    <p class="finale-name" id="finale-name">Donnn</p>
+
+    <div class="finale-divider" id="finale-div"><span>✦ And one last poem ✦</span></div>
+
+    <div id="secret-container" style="text-align:center; margin-top:40px; width:100%; max-width:600px;">
+      
+      <!-- Password Screen -->
+      <div id="password-screen" style="opacity:1; transition:opacity 0.8s ease;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.3rem; color:var(--gold); margin-bottom:15px; letter-spacing:1px;">
+          To read the final poem, enter the secret year:
+        </p>
+        <div style="display:flex; justify-content:center; gap:10px;">
+          <input type="password" id="secretPass" placeholder="****" maxlength="4" 
+            style="padding:10px; font-size:1.2rem; background:rgba(255,255,255,0.05); border:1px solid var(--gold); color:var(--gold); text-align:center; width:120px; outline:none; border-radius:4px;">
+          <button onclick="checkPass()" 
+            style="padding:10px 20px; font-family:'Playfair Display',serif; font-size:1.1rem; background:var(--gold); color:#000; border:none; cursor:pointer; border-radius:4px; font-weight:700; transition:all 0.3s;">
+            Open Box
+          </button>
+        </div>
+        <p id="passError" style="color:#e8a838; font-family:'Cormorant Garamond',serif; font-size:1.1rem; margin-top:10px; opacity:0; transition:opacity 0.3s;">Incorrect password, try again</p>
+      </div>
+
+      <!-- Gift Wrapper (initially hidden) -->
+      <div id="gift-wrapper" style="display:none; opacity:0; transform:scale(0.9); transition:all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); margin-top:20px; border:2px solid var(--gold); padding:40px; position:relative; background:rgba(10,5,2,0.6); backdrop-filter:blur(4px);">
+        <div style="position:absolute; inset:0; border:1px solid rgba(201,168,76,0.3); margin:6px; pointer-events:none;"></div>
+        <div style="position:absolute; top:-15px; left:50%; transform:translateX(-50%); background:var(--dark); padding:0 10px; color:var(--gold); font-size:1.5rem;">🎁</div>
+        
+        <!-- The Poem -->
+        <div class="poem-content" style="font-family:'IM Fell English',serif; font-style:italic; font-size:1.35rem; line-height:1.8; color:var(--cream);">
+          <p>
+            Another year arrives with quiet light,<br>
+            A soul that makes the ordinary rare.<br>
+            May joy and laughter find you every day,<br>
+            Happy Birthday may grace follow you everywhere.<br><br>
+            And if ever the days grow less gentle than they seem,<br>
+            remember… you can always call me. 
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
